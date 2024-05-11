@@ -39,9 +39,9 @@ fetch('https://randomuser.me/api/?results=6')
 			<img src="${user.picture.large}" class="card-img-top" alt="foto van ${user.name.first} ${user.name.last}">
 
 			<div class="card-body">
-			<p class="card-title text-uppercase fs-6 fw-bolder pt-3">         </p>
-			<p class="card-text h6 small mt-2">Ik kom uit ${user.location.country}  en ben fan van de koffiebonen van ${   }!</p>
-			<a href="mailto:     ">
+			<p class="card-title text-uppercase fs-6 fw-bolder pt-3">${user.name.first}   ${user.name.last}</p>
+			<p class="card-text h6 small mt-2">Ik kom uit ${user.location.country}  en ben fan van de koffiebonen van ${random_item(brands)}!</p>
+			<a href="mailto: ${user.email}     ">
 			  <i class="bi bi-envelope koffiebruin fs-3"></i>
 			</a>
             </div>
